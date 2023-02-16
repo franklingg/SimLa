@@ -1,6 +1,11 @@
+.tile{
+    max-height: 17rem;
+}
 
-.tile {
-    position: relative;
-    height: 17rem;
-    width: 17rem;
+.tile path {
+    transition: all 0.1s ease-in-out;
+}
+
+.tile path:hover{
+    fill: red;
 }

@@ -2,86 +2,67 @@ import React, { useCallback, useState, useEffect } from "react";
 import styles from "./home.module.css";
 import Select from "react-select";
 import ModelPicker from "~/components/ModelPicker";
-import tileImg from "../../assets/tile.png";
+import Tile from '../../components/Tile';
+import TileImg from '../../assets/center_tiles/teste.svg';
 import { useDrop } from "react-dnd";
-import Tile from "../../components/Tile";
+import colors from '../../assets/colors.json';
 
 const modelOptions = [
-  { value: true, label: "Com Moldura" },
   { value: false, label: "Sem Moldura" },
+  { value: true, label: "Com Moldura" },
 ];
 
 export default function Index() {
   const [modelBorder, setModelBorder] = useState(modelOptions[0]);
-  const tiles = Array.from(Array(20)).map((_) => ({
-    img: tileImg.src,
+  const tiles = [...Array.from(Array(5)).map((_) => ({
+    TileImg,
     code: "CO 002",
     size: 20,
     type: 'CENTER_TILE'
-  }));
-  const tiles2 = Array.from(Array(20)).map((_) => ({
-    img: tileImg.src,
-    code: "CO 002",
-    size: 20,
-    type: 'SIDE_TILE'
-  }));
-  const colors = [{
-    name: 'BRANCO C01',
-    value: '#fff'
-  },
-  {
-    name:  'CINZA C03',
-    value: '#888'
-  },
-  {
-    name:  'ROSA',
-    value: 'pink'
-  },
-  {
-    name:  'verde',
-    value: 'green'
-  }
-]
+  })),
+  ];
 
 
   const [centerTile, setCenterTile] = useState();
   const [sideTile, setSideTile] = useState();
+  const [selectedColor, setSelectedColor] = useState();
 
-  const [{isOver: isOverCenter}, dropCenter] = useDrop(() => ({
+  const [{ isOver: isOverCenter }, dropCenter] = useDrop(() => ({
     accept: "CENTER_TILE",
     drop: (item, monitor) => {
-      if(monitor.isOver()){
+      if (monitor.isOver()) {
         setCenterTile(item);
       }
     },
     collect: (monitor) => ({
-      isOver: monitor.isOver({shallow: true}),
+      isOver: monitor.isOver({ shallow: true }),
       canDrop: monitor.canDrop()
     })
   }));
-  const [{isOver: isOverSide}, dropSide] = useDrop(() => ({
+  const [{ isOver: isOverSide }, dropSide] = useDrop(() => ({
     accept: "SIDE_TILE",
     drop: (item, monitor) => {
-      if(monitor.isOver()){
+      if (monitor.isOver()) {
         setSideTile(item);
       }
     },
     collect: (monitor) => ({
-      isOver: monitor.isOver({shallow: true}),
+      isOver: monitor.isOver({ shallow: true }),
       canDrop: monitor.canDrop()
     })
   }));
 
-  const cleanModels = useCallback(()=>{
+  const cleanModels = useCallback(() => {
     setSideTile();
     setCenterTile();
   }, []);
 
-  const paintTile = useCallback((color)=>{
-    alert(color.name);
-  }, []);
+  const changeColor = useCallback((color) => {
+    if(selectedColor && selectedColor == color) setSelectedColor()
+    else setSelectedColor(color)
+  }, [selectedColor]);
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
 
   return (
     <main className={styles.home}>
@@ -90,7 +71,10 @@ export default function Index() {
         <Select
           options={modelOptions}
           value={modelBorder}
-          onChange={(v) => setModelBorder(v)}
+          onChange={(v) => {
+            setModelBorder(v);
+            cleanModels();
+          }}
           classNames={{
             container: () => styles.model__picker,
           }}
@@ -100,16 +84,17 @@ export default function Index() {
           type="CENTER_TILE"
           options={tiles}
         />
-        <ModelPicker
+        {modelBorder.value && <ModelPicker
           title="Área de Moldura"
           type="SIDE_TILE"
-          options={tiles2}
-        />
-        <button className={styles.model__clean} onClick={cleanModels}>Limpar Áreas</button>
+          options={tiles}
+        />}
+        <button className={styles.model__clean} onClick={cleanModels}>Limpar Área(s)</button>
       </section>
       <section className={styles.board}>
         <h2>Modelo escolhido:</h2>
         <p>Clique numa cor e depois numa área do ladrilho para colorir</p>
+        {modelBorder.value ? (
           <div
             className={`${styles.board__area} ${isOverSide && styles.board__area__highlight}`}
             ref={dropSide}
@@ -123,14 +108,23 @@ export default function Index() {
             >
               {centerTile && Array.from(Array(4)).map((_, idx) => <Tile data={centerTile} key={idx} />)}
             </div>
+          </div>) : (
+          <div
+            className={`${styles.board__area} ${styles.board__center__unique} ${isOverCenter && styles.board__center__highlight}`}
+            ref={dropCenter}
+            role={"Dustbin"}
+            style={{ backgroundColor: centerTile ? 'white' : 'var(--center)' }}
+          >
+            {centerTile && Array.from(Array(9)).map((_, idx) => <Tile data={centerTile} key={idx} />)}
           </div>
+        )}
       </section>
       <section className={styles.picker}>
         <h2>Escolha a cor:</h2>
         <div className={styles.picker__colors}>
           {colors.map((color, idx) => (
-            <div className={styles.picker__colorItem} key={idx} onClick={(e) => paintTile(color)}>
-              <span style={{backgroundColor: color.value}} />
+            <div className={selectedColor === color ? styles.picker__selectedColor : styles.picker__colorItem} key={idx} onClick={(e)=>changeColor(color)}>
+              <span style={{ backgroundColor: color.value }} />
               <p>{color.name}</p>
             </div>
           ))}

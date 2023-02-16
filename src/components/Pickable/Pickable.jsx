@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useDrag } from "react-dnd";
 
 export default function Pickable({ data }) {
+  const TileImg = data.TileImg;
+
   const [{}, drag] = useDrag(() => ({
     type: data.type,
     item: { ...data },
@@ -16,7 +18,7 @@ export default function Pickable({ data }) {
   return (
     <div className={styles.pickable} role="Handle" ref={drag}>
       <div className={styles.pickable__image}>
-        <Image src={data.img} alt={`Ladrilho ${data.code}`} layout="fill" />
+        <TileImg alt={`Ladrilho ${data.code}`} width="10rem" height="10rem" />
       </div>
       <span>{`${data.code} (${data.size} X ${data.size} CM)`}</span>
     </div>

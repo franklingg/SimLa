@@ -1,5 +1,94 @@
 [
     {
-        
+        "name": "BRANCO C01",
+        "value": "#FFF"
+    },
+    {
+        "name": "AMARELO CLARO C02",
+        "value": "#F9EBAA"
+    },
+    {
+        "name": "AMARELO C03",
+        "value": "#F5C149"
+    },
+    {
+        "name": "OCRE C04",
+        "value": "#C29542"
+    },
+    {
+        "name": "LARANJA C05",
+        "value": "#D78357"
+    },
+    {
+        "name": "VERMELHO C06",
+        "value": "#CB4542"
+    },
+    {
+        "name": "VERMELHO TIJOLO C07",
+        "value": "#863429"
+    },
+    {
+        "name": "BEGE C08",
+        "value": "#F7E3CA"
+    },
+    {
+        "name": "MARROM C09",
+        "value": "#795257"
+    },
+    {
+        "name": "ROSA C10",
+        "value": "#F1B4B9"
+    },
+    {
+        "name": "RUBI C11",
+        "value": "#6A2923"
+    },
+    {
+        "name": "AZUL CLARO C12",
+        "value": "#B4D4EB"
+    },
+    {
+        "name": "AZUL C13",
+        "value": "#599DCC"
+    },
+    {
+        "name": "AZUL ESCURO C14",
+        "value": "#2F5C73"
+    },
+    {
+        "name": "VERDE CLARO C15",
+        "value": "#ACC99D"
+    },
+    {
+        "name": "VERDE NEON C16",
+        "value": "#AFA977"
+    },
+    {
+        "name": "VERDE ESCURO C17",
+        "value": "#426338"
+    },
+    {
+        "name": "CINZA CLARO C18",
+        "value": "#CACFCB"
+    },
+    {
+        "name": "CINZA C19",
+        "value": "#A7ABAE"
+    },
+    {
+        "name": "PRETO C20",
+        "value": "#202020"
+    },
+    {
+        "name": "AZUL PETROLEO C21",
+        "value": "#0D7B9E"
+    },
+    {
+        "name": "CINZA CHUMBO C22",
+        "value": "#727375"
+    },
+    {
+        "name": "GOIABA C23",
+        "value": "#AB4B3F"
     }
 ]
