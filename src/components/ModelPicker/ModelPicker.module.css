@@ -17,22 +17,33 @@
 .picker__content {
     margin-top: 1rem;
     overflow-y: scroll;
-    max-height: 40vh;
+    max-height: 43vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1.2rem;
-    row-gap: 1.2rem;
     padding-right: 1rem;
 }
 
 .picker__item {
     cursor: pointer;
+    padding: 1rem;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
-.picker__image{
-    position: relative;
-    width: 10rem;
+.picker__item__selected{
+    background-color: var(--side);
+    border-radius: 1rem;
+}
+
+.picker__item__image{
     height: 10rem;
 }
+.picker__item__image svg {
+    border: 1px solid black;
+}
 
+.picker__item__image svg > g {
+    transform: scale(0.59);
+}

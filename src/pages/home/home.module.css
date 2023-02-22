@@ -7,9 +7,9 @@
 }
 
 .model {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
 }
 
@@ -56,21 +56,6 @@
     grid-template-columns: 1fr 1fr;
     background-color: var(--center);
     width: 34rem;
-}
-
-.board__area__highlight, .board__center__highlight{
-    border: 2px solid var(--highlight);
-}
-
-.board__center__noHighlight{
-    outline: 2px solid var(--center);
-    border-top: 2px solid var(--highlight);
-    border-right: 2px solid var(--highlight);
-}
-
-.board__center__unique{
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
 }
 
 .picker{

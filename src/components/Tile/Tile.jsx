@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import styles from "./Tile.module.css";
 
-export default function Tile({ data, updateTile, selectedColor }) {
-  const TileImg = data.TileImg;
+export default function Tile({ data, tileIndex, updateTile, selectedColor }) {
+  const TileImg = data.img;
   const tileRef = useRef();
 
   useEffect(() => {
@@ -27,6 +27,16 @@ export default function Tile({ data, updateTile, selectedColor }) {
       });
     }
   }, [data.layoutChanges]);
+
+  useEffect(()=>{
+    if(tileRef.current && tileIndex != 0){
+      if(data.type == 'PAIR'){
+        if(tileIndex % 2) tileRef.current.style.transform = 'rotate(90deg)'
+      } else if(data.type == 'QUADRUPLE'){
+        tileRef.current.style.transform = `scale(${tileIndex != 2 ? -1 : 1}, ${tileIndex != 1 ? -1 : 1})`
+      }
+    }
+  }, [tileIndex, data.type]);
 
   return (
     <div className={styles.tile} ref={tileRef}>
