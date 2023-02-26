@@ -12,6 +12,10 @@
     --text: #004467;
     --border: #DEC573;
     --border-shadow: #FFFFB4;
+    --side: #ccc;
+    --center: #b2b2b2;
+    --highlight: #569DE5;
+    --color-box: #EFEFEF;
 
     color: var(--text);
 }
