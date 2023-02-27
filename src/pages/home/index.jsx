@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 import Select from "react-select";
 import ModelPicker from "~/components/ModelPicker";
 import Tile from '../../components/Tile';
-import TileImg from '../../assets/center_tiles/teste.svg';
+import centerTiles from '../../assets/center_tiles';
 import { useDrop } from "react-dnd";
 import colors from '../../assets/colors.json';
 
@@ -14,13 +14,13 @@ const modelOptions = [
 
 export default function Index() {
   const [modelBorder, setModelBorder] = useState(modelOptions[0]);
-  const tiles = [...Array.from(Array(5)).map((_) => ({
-    TileImg,
-    code: "CO 002",
+  const tiles = centerTiles.map(tile => ({
+    TileImg: tile.img,
+    code: tile.code,
     size: 20,
-    type: 'CENTER_TILE'
-  })),
-  ];
+    type: 'CENTER_TILE',
+    layoutChanges: {}
+  }));
 
 
   const [centerTile, setCenterTile] = useState();
@@ -58,7 +58,7 @@ export default function Index() {
   }, []);
 
   const changeColor = useCallback((color) => {
-    if(selectedColor && selectedColor == color) setSelectedColor()
+    if (selectedColor && selectedColor == color) setSelectedColor()
     else setSelectedColor(color)
   }, [selectedColor]);
 
@@ -100,13 +100,13 @@ export default function Index() {
             ref={dropSide}
             role={"Dustbin"}
           >
-            {sideTile && Array.from(Array(5)).map((_, idx) => <Tile data={sideTile} key={idx} />)}
+            {sideTile && Array.from(Array(5)).map((_, idx) => <Tile data={sideTile} key={idx} updateTile={setSideTile} selectedColor={selectedColor} />)}
             <div
               className={`${styles.board__center} ${isOverSide && styles.board__center__noHighlight} ${isOverCenter && styles.board__center__highlight}`}
               ref={dropCenter}
               role={"Dustbin"}
             >
-              {centerTile && Array.from(Array(4)).map((_, idx) => <Tile data={centerTile} key={idx} />)}
+              {centerTile && Array.from(Array(4)).map((_, idx) => <Tile data={centerTile} key={idx} updateTile={setCenterTile} selectedColor={selectedColor} />)}
             </div>
           </div>) : (
           <div
@@ -115,7 +115,7 @@ export default function Index() {
             role={"Dustbin"}
             style={{ backgroundColor: centerTile ? 'white' : 'var(--center)' }}
           >
-            {centerTile && Array.from(Array(9)).map((_, idx) => <Tile data={centerTile} key={idx} />)}
+            {centerTile && Array.from(Array(9)).map((_, idx) => <Tile data={centerTile} key={idx} updateTile={setCenterTile} selectedColor={selectedColor} />)}
           </div>
         )}
       </section>
@@ -123,7 +123,7 @@ export default function Index() {
         <h2>Escolha a cor:</h2>
         <div className={styles.picker__colors}>
           {colors.map((color, idx) => (
-            <div className={selectedColor === color ? styles.picker__selectedColor : styles.picker__colorItem} key={idx} onClick={(e)=>changeColor(color)}>
+            <div className={selectedColor === color ? styles.picker__selectedColor : styles.picker__colorItem} key={idx} onClick={(e) => changeColor(color)}>
               <span style={{ backgroundColor: color.value }} />
               <p>{color.name}</p>
             </div>
