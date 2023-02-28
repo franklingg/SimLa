@@ -55,6 +55,7 @@ export default function Index() {
   const cleanModels = useCallback(() => {
     setSideTile();
     setCenterTile();
+    setSelectedColor();
   }, []);
 
   const changeColor = useCallback((color) => {
