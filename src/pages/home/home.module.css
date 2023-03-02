@@ -178,9 +178,16 @@
         width: 66vw;
     }
 
+    .board__side__placeholder > h2, .board__center__placeholder > h2 {
+        font-size: 1.9rem;
+    }
+
+    .board__side__placeholder > p, .board__center__placeholder > p{
+        font-size: 1.3rem;
+    }
+
     .picker {
         margin: 0 1.5rem;
-        margin-bottom: 40rem;
         align-items: center;
     }
 

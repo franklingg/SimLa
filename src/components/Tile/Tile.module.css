@@ -11,13 +11,8 @@
 }
 
 @media(max-width: 414px){
-    .tile{
+    .tile, .tile > svg {
         max-height: 33vw;
         max-width: 33vw;
-        display: flex;
-    }
-    .tile > svg {
-        height: 33vw;
-        width: 33vw;
     }
 }
