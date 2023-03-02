@@ -9,3 +9,15 @@
 .tile path:hover{
     fill: red !important;
 }
+
+@media(max-width: 414px){
+    .tile{
+        max-height: 33vw;
+        max-width: 33vw;
+        display: flex;
+    }
+    .tile > svg {
+        height: 33vw;
+        width: 33vw;
+    }
+}
