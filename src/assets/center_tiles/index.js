@@ -9,10 +9,10 @@ import LH3071 from './lh_3071.svg';
 // 3. QUADRUPLE: 4 TILES MAKE A FIGURE
 
 const tiles = [
-    {img: LH3042, code: 'LH 3042', type: 'NORMAL', size: 20},
-    {img: LH3139, code: 'LH 3139', type: 'NORMAL', size: 20},
-    {img: LH3168, code: 'LH 3168', type: 'PAIR', size: 20},
-    {img: LH3071, code: 'LH 3071', type: 'QUADRUPLE', size: 20},
+    {img: LH3042, code: 'LH 3042', type: 'NORMAL', size: 20, numColors: 2},
+    {img: LH3139, code: 'LH 3139', type: 'NORMAL', size: 20, numColors: 2},
+    {img: LH3168, code: 'LH 3168', type: 'PAIR', size: 20, numColors: 2},
+    {img: LH3071, code: 'LH 3071', type: 'QUADRUPLE', size: 20, numColors: 2},
 ];
 
 export default tiles;

@@ -11,7 +11,7 @@ export default class Mydocument extends Document {
           <meta name="distribution" content="global" />
 
           <meta name="country" content="BR" />
-          <meta name="description" content="" />
+          <meta name="description" content="Ferramenta de Personalização de Ladrilhos" />
 
           <meta httpEquiv="Content-Style-Type" content="text/css" />
           <meta httpEquiv="Content-Script-Type" content="text/javascript" />

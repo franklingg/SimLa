@@ -7,10 +7,18 @@
 }
 
 .model {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.company{
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 7px;
+    background-color: var(--logo);
+    margin-bottom: 2rem;
 }
 
 .model__picker{
@@ -23,14 +31,25 @@
     font-size: 1.6rem;
 }
 
-.model__clean{
-    margin-top: 2rem;
+.model__clean, .model__export{
+    margin-top: 1rem;
     box-shadow: 2px 2px 1px var(--side);
     border-radius: 10px;
     border: none;
     padding: 1rem;
     cursor: pointer;
     font-family: Poppins;
+    transition: all 0.15s ease-out;
+}
+
+.model__export {
+    margin-top: 2rem;
+    background-color: var(--export);
+    color: white;
+}
+
+.model__clean:hover, .model__export:hover{
+    transform: scale(1.02);
 }
 
 .board{
@@ -104,6 +123,11 @@
     border-radius: 10px;
     cursor: pointer;
     gap: 0.2rem;
+    transition: all 0.15s ease-out;
+}
+
+.picker__colorItem:hover{
+    transform: scale(1.05);
 }
 
 .picker__colorItem > span, .picker__selectedColor > span {

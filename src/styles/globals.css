@@ -16,6 +16,8 @@
     --center: #b2b2b2;
     --highlight: #569DE5;
     --color-box: #EFEFEF;
+    --export: #0a9e3e;
+    --logo: #3D4196;
 
     color: var(--text);
 }

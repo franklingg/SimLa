@@ -5,9 +5,9 @@ import Tile from '../../components/Tile';
 import center_tiles from '../../assets/center_tiles';
 import edge_tiles from '../../assets/edge_tiles';
 import colors from '../../assets/colors.json';
-// import JsPDF from 'jspdf';
-// import 'svg2pdf.js';
 import exportModel from "../../util/exportBoard";
+import Image from "next/image";
+import logo from '../../assets/logo.png';
 
 export default function Index() {
 
@@ -45,22 +45,12 @@ export default function Index() {
     else setSelectedColor(color)
   }, [selectedColor]);
 
-  // const exportModel = useCallback(async (e) => {
-  //   if(boardRef.current){
-  //     const model = new JsPDF('landscape','pt','a4');
-  //     const modelDims = boardRef.current.getBoundingClientRect();
-  //     await Promise.all([...boardRef.current.getElementsByTagName('svg')].map( svgElement => {
-  //       const dims = svgElement.getBoundingClientRect();
-  //       return model.addSvgAsImage(svgElement.outerHTML, dims.x - modelDims.x, dims.y - modelDims.y, dims.width, dims.height
-  //       );
-  //     }));
-  //     model.save('Modelo_Gerado.pdf');
-  //   }
-  // }, [boardRef]);
-
   return (
     <main className={styles.home}>
       <section className={styles.model}>
+        <a className={styles.company} href="http://www.metromateriais.com.br" target="_blank" rel="noreferrer">
+          <Image src={logo} alt="Logotipo da Metro Hidráulicos" layout="responsive" />
+        </a>
         <p>Escolha os modelos:</p>
         <ModelPicker
           title="Área de Centro"
@@ -74,8 +64,8 @@ export default function Index() {
           updateOperation={changeSideTile}
           options={sideTiles}
         />
+        <button className={styles.model__export} onClick={(_)=>exportModel(boardRef, centerTile, sideTile)}>Exportar Modelo</button>
         <button className={styles.model__clean} onClick={cleanModels}>Limpar Áreas</button>
-        <button className={styles.model__clean} onClick={(_)=>exportModel(boardRef, centerTile, sideTile)}>Exportar Áreas</button>
       </section>
       <section className={styles.board}>
         <h2>Modelo escolhido:</h2>
