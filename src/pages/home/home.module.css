@@ -1,6 +1,5 @@
 .home {
     width: 100vw;
-    height: 100;
     display: flex;
     margin: 3rem 5rem;
     gap: 5rem;
@@ -144,4 +143,57 @@
 .picker__selectedColor {
     transform: scale(1.10);
     background-color: var(--side);
+}
+
+@media(max-width: 414px){
+    .home{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .model{
+        align-items: center;
+    }
+
+    .model__clean, .model__export{
+        min-width: 55vw;
+        padding: 1.3rem 1rem;
+    }
+
+    .board{
+        align-items: center;
+        margin: 0 1.5rem;
+    }
+    
+    .board > p {
+        text-align: center;
+    }
+
+    .board__area {
+        width: 99vw;
+        height: 99vw;
+    }
+
+    .board__center {
+        width: 66vw;
+    }
+
+    .picker {
+        margin: 0 1.5rem;
+        margin-bottom: 40rem;
+        align-items: center;
+    }
+
+    .picker__colors {
+        gap: 1.5rem;
+    }
+
+    .picker__colorItem, .picker__selectedColor {
+        max-width: 10rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .picker__selectedColor {
+        transform: scale(1.06);
+    }
 }

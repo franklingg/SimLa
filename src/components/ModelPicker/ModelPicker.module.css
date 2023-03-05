@@ -48,3 +48,9 @@
 .picker__item__image svg > g {
     transform: scale(0.59);
 }
+
+@media(max-width: 414px){
+    .picker__content {
+        max-height: 32vh;
+    }
+}
