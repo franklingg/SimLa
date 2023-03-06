@@ -67,6 +67,11 @@
     background-color: var(--side);
 }
 
+.board__area > div:last-of-type{
+    grid-row: 1;
+    grid-column: 3;
+}
+
 .board__center{
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
@@ -90,11 +95,11 @@
 }
 
 .board__side__placeholder:first-child{
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 3 !important;
 }
 
 .board__side__placeholder:nth-child(2){
-    grid-row: 2 / span 2;
+    grid-row: 2 / span 2 !important;
     writing-mode: vertical-rl;
     text-orientation: sideways-right;
 }

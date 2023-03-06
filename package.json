@@ -12,6 +12,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.11.10",
+    "html-to-image": "^1.11.11",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.5.28",
     "next": "12.3.1",

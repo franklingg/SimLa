@@ -9,11 +9,7 @@ export default function Tile({ data, tileIndex, updateTile, selectedColor }) {
     if (tileRef.current && selectedColor && updateTile) {
       const clickables = [...tileRef.current.querySelectorAll('[data-name]')];
       clickables.filter(c => c.getAttribute('data-name')?.length == 1).forEach(element => {
-        element.addEventListener('click', (e) => {
-          updateTile(old => {
-            return ({...old, layoutChanges: {...old.layoutChanges, [element.getAttribute('data-name')]: selectedColor.value}})
-          });
-        });
+        element.addEventListener('click', _ => updateTile(element));
       });
     }
   }, [selectedColor, updateTile]);

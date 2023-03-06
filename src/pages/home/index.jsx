@@ -13,32 +13,33 @@ export default function Index() {
 
   const boardRef = useRef();
 
-  const centerTiles = center_tiles.map(tile => ({
+  const centerModels = center_tiles.map(tile => ({
     ...tile,
     layoutChanges: {}
   }));
-  const sideTiles = edge_tiles.map(tile => ({
+  const sideModels = edge_tiles.map(tile => ({
     ...tile,
     layoutChanges: {}
   }));
 
-  const [centerTile, setCenterTile] = useState();
-  const [sideTile, setSideTile] = useState();
+  const [centerModel, setCenterModel] = useState();
+  const [sideModel, setSideModel] = useState();
   const [selectedColor, setSelectedColor] = useState();
 
   const cleanModels = useCallback(() => {
-    setSideTile();
-    setCenterTile();
+    setSideModel();
+    setCenterModel();
     setSelectedColor();
   }, []);
 
-  const changeCenterTile = useCallback((newTile) => {
-    setCenterTile(newTile);
-  }, []);
-
-  const changeSideTile = useCallback((newTile) => {
-    setSideTile(newTile);
-  }, []);
+  const updateTile = useCallback((modelStateChanger) => {
+    const updateTrigger = (element) => {
+      modelStateChanger(oldTile => {
+        return ({...oldTile, layoutChanges: {...oldTile.layoutChanges, [element.getAttribute('data-name')]: selectedColor.value}})
+      });
+    }
+    return updateTrigger;
+  }, [selectedColor]);
 
   const changeColor = useCallback((color) => {
     if (selectedColor && selectedColor == color) setSelectedColor()
@@ -54,25 +55,28 @@ export default function Index() {
         <p>Escolha os modelos:</p>
         <ModelPicker
           title="Área de Centro"
-          picked={centerTile}
-          updateOperation={changeCenterTile}
-          options={centerTiles}
+          picked={centerModel}
+          updateOperation={setCenterModel}
+          options={centerModels}
         />
         <ModelPicker
           title="Área de Moldura"
-          picked={sideTile}
-          updateOperation={changeSideTile}
-          options={sideTiles}
+          picked={sideModel}
+          updateOperation={setSideModel}
+          options={sideModels}
         />
-        <button className={styles.model__export} onClick={(_)=>exportModel(boardRef, centerTile, sideTile)}>Exportar Modelo</button>
+        <button className={styles.model__export} onClick={(_)=>exportModel(boardRef, centerModel, sideModel)}>Exportar Modelo</button>
         <button className={styles.model__clean} onClick={cleanModels}>Limpar Áreas</button>
       </section>
       <section className={styles.board}>
         <h2>Modelo escolhido:</h2>
         <p>Clique numa cor e depois numa área do ladrilho para colorir</p>
         <div className={styles.board__area} ref={boardRef}>
-          {sideTile 
-            ? Array.from(Array(5)).map((_, idx) => <Tile data={sideTile} key={idx} updateTile={setSideTile} selectedColor={selectedColor} />)
+          {sideModel
+            ? <>
+                {Array.from(Array(4)).map((_, idx) => <Tile data={sideModel} key={idx} updateTile={updateTile(setSideModel)} selectedColor={selectedColor} />)}
+                <Tile data={{...sideModel.cornerModel, layoutChanges: {...sideModel.layoutChanges}}} updateTile={updateTile(setSideModel)} selectedColor={selectedColor} />
+              </>
             : 
             <>
               <div className={styles.board__side__placeholder}>
@@ -85,14 +89,14 @@ export default function Index() {
               </div>
             </>
           }
-          <div className={styles.board__center}>
-            {centerTile 
-              ? Array.from(Array(4)).map((_, idx) => <Tile data={centerTile} tileIndex={idx} key={idx} updateTile={setCenterTile} selectedColor={selectedColor} />) 
+          <section className={styles.board__center}>
+            {centerModel 
+              ? Array.from(Array(4)).map((_, idx) => <Tile data={centerModel} tileIndex={idx} key={idx} updateTile={updateTile(setCenterModel)} selectedColor={selectedColor} />) 
               : <div className={styles.board__center__placeholder}>
                   <h2>Área de Centro,<br/> Florão ou Tozeto</h2>
                   <p>Selecione o ladrilho</p>
                 </div>}
-          </div>
+          </section>
         </div>
       </section>
       <section className={styles.picker}>
