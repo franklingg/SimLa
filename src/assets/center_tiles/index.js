@@ -12,6 +12,12 @@ import LH3012 from './lh_3012.svg';
 import LH3013 from './lh_3013.svg';
 import LH3014 from './lh_3014.svg';
 import LH3015 from './lh_3015.svg';
+import LH3016 from './lh_3016.svg';
+import LH3017 from './lh_3017.svg';
+import LH3018 from './lh_3018.svg';
+import LH3019 from './lh_3019.svg';
+import LH3020 from './lh_3020.svg';
+import LH3021 from './lh_3021.svg';
 
 // TILES HAVE THREE MAIN TYPES:
 // 1. NORMAL: NO SEQUENCE, SIDE BY SIDE IS CORRECT
@@ -33,6 +39,12 @@ const tiles = [
     {img: LH3013, code: 'LH 3013', type: 'NORMAL', size: 20, numColors: 4},
     {img: LH3014, code: 'LH 3014', type: 'NORMAL', size: 20, numColors: 2},
     {img: LH3015, code: 'LH 3015', type: 'NORMAL', size: 20, numColors: 3},
+    {img: LH3016, code: 'LH 3016', type: 'NORMAL', size: 20, numColors: 2},
+    {img: LH3017, code: 'LH 3017', type: 'NORMAL', size: 20, numColors: 4},
+    {img: LH3018, code: 'LH 3018', type: 'ROTATION', size: 20, numColors: 3},
+    {img: LH3019, code: 'LH 3019', type: 'NORMAL', size: 20, numColors: 3},
+    {img: LH3020, code: 'LH 3020', type: 'ROTATION', size: 20, numColors: 2},
+    {img: LH3021, code: 'LH 3021', type: 'NORMAL', size: 20, numColors: 4},
 ];
 
 export default tiles;

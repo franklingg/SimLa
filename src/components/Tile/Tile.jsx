@@ -28,10 +28,12 @@ export default function Tile({ data, tileIndex, updateTile, selectedColor }) {
     if(tileRef.current && tileIndex != 0){
       // if(data.type == 'PAIR'){
       //   if(tileIndex % 2) tileRef.current.style.transform = 'rotate(90deg)'
-      if(data.type == 'REFLECTIVE'){
-        tileRef.current.style.transform = `scale(${tileIndex != 2 ? -1 : 1}, ${tileIndex != 1 ? -1 : 1})`
+      if(data.type == 'NORMAL'){
+        tileRef.current.style.transform = '';
+      } else if(data.type == 'REFLECTIVE'){
+        tileRef.current.style.transform = `scale(${tileIndex != 2 ? -1 : 1}, ${tileIndex != 1 ? -1 : 1})`;
       } else if(data.type == 'ROTATION'){
-        tileRef.current.style.transform = `rotate(${tileIndex == 1 ? 90 : tileIndex == 3 ? 180 : 270}deg)`
+        tileRef.current.style.transform = `rotate(${tileIndex == 1 ? 90 : tileIndex == 3 ? 180 : 270}deg)`;
       }
     }
   }, [tileIndex, data.type]);
