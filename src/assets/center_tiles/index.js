@@ -8,6 +8,10 @@ import LH3008 from './lh_3008.svg';
 import LH3009 from './lh_3009.svg';
 import LH3010 from './lh_3010.svg';
 import LH3011 from './lh_3011.svg';
+import LH3012 from './lh_3012.svg';
+import LH3013 from './lh_3013.svg';
+import LH3014 from './lh_3014.svg';
+import LH3015 from './lh_3015.svg';
 
 // TILES HAVE THREE MAIN TYPES:
 // 1. NORMAL: NO SEQUENCE, SIDE BY SIDE IS CORRECT
@@ -25,6 +29,10 @@ const tiles = [
     {img: LH3009, code: 'LH 3009', type: 'NORMAL', size: 20, numColors: 3},
     {img: LH3010, code: 'LH 3010', type: 'REFLECTIVE', size: 20, numColors: 2},
     {img: LH3011, code: 'LH 3011', type: 'NORMAL', size: 20, numColors: 3},
+    {img: LH3012, code: 'LH 3012', type: 'NORMAL', size: 20, numColors: 3},
+    {img: LH3013, code: 'LH 3013', type: 'NORMAL', size: 20, numColors: 4},
+    {img: LH3014, code: 'LH 3014', type: 'NORMAL', size: 20, numColors: 2},
+    {img: LH3015, code: 'LH 3015', type: 'NORMAL', size: 20, numColors: 3},
 ];
 
 export default tiles;
