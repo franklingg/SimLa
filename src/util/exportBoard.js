@@ -9,11 +9,11 @@ const modelOffset = { x: 270, y: 42 }
 const infoOffset = { x: 50, y: 290 }
 
 const exportModel = async (boardRef, center, side) => {
-  // if (!boardRef.current || !center || !side) {
-  //   alert('Selecione ambas as áreas antes de exportar');
-  // } else if([center, side].some(tile => Object.keys(tile.layoutChanges).length !== tile.numColors)) {
-  //   alert('Escolha cores para todas as partes dos ladrilhos selecionados')
-  // } else {
+  if (!boardRef.current || !center || !side) {
+    alert('Selecione ambas as áreas antes de exportar');
+  } else if([center, side].some(tile => Object.keys(tile.layoutChanges).length !== tile.numColors)) {
+    alert('Escolha cores para todas as partes dos ladrilhos selecionados')
+  } else {
     const model = new JsPDF('landscape', 'pt', 'a4');
     // TITULO
     const img = document.createElement('img');
@@ -41,7 +41,7 @@ const exportModel = async (boardRef, center, side) => {
     );
 
     model.save('Modelo_Gerado.pdf');
-  // }
+  }
 };
 
 export default exportModel;
