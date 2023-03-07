@@ -1,7 +1,7 @@
 .home {
     width: 100vw;
     display: flex;
-    margin: 3rem 5rem;
+    margin: 2rem 5rem;
     gap: 5rem;
 }
 
@@ -57,13 +57,17 @@
     gap: 1rem;
 }
 
+.board > p {
+    max-width: 38vw;
+}
+
 .board__area{
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 51rem;
-    width: 51rem;
+    height: 49.5rem;
+    width: 49.5rem;
     background-color: var(--side);
 }
 
@@ -79,7 +83,7 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     background-color: var(--center);
-    width: 34rem;
+    width: 33rem;
 }
 
 .board__center__placeholder{

@@ -69,8 +69,8 @@ export default function Index() {
         <button className={styles.model__clean} onClick={cleanModels}>Limpar Áreas</button>
       </section>
       <section className={styles.board}>
-        <h2>Modelo escolhido:</h2>
-        <p>Clique numa cor e depois numa área do ladrilho para colorir</p>
+        <h2>Modelo gerado</h2>
+        <p>Após escolher os modelos, selecione uma cor e depois uma área do ladrilho para colorir</p>
         <div className={styles.board__area} ref={boardRef}>
           {sideModel
             ? <>
@@ -80,12 +80,12 @@ export default function Index() {
             : 
             <>
               <div className={styles.board__side__placeholder}>
-                <h2>Área de Moldura e Rodapé</h2>
-                <p>Selecione o ladrilho</p>
+                <h2>Área de Moldura</h2>
+                <p>Selecione o modelo</p>
               </div>
               <div className={styles.board__side__placeholder}>
                 <h2>Área de Moldura</h2>
-                <p>Selecione o ladrilho</p>
+                <p>Selecione o modelo</p>
               </div>
             </>
           }
@@ -93,14 +93,14 @@ export default function Index() {
             {centerModel 
               ? Array.from(Array(4)).map((_, idx) => <Tile data={centerModel} tileIndex={idx} key={idx} updateTile={updateTile(setCenterModel)} selectedColor={selectedColor} />) 
               : <div className={styles.board__center__placeholder}>
-                  <h2>Área de Centro,<br/> Florão ou Tozeto</h2>
-                  <p>Selecione o ladrilho</p>
+                  <h2>Área de Centro</h2>
+                  <p>Selecione o modelo</p>
                 </div>}
           </section>
         </div>
       </section>
       <section className={styles.picker}>
-        <h2>Escolha a cor:</h2>
+        <h2>Seletor de cores</h2>
         <div className={styles.picker__colors}>
           {colors.map((color, idx) => (
             <div className={selectedColor === color ? styles.picker__selectedColor : styles.picker__colorItem} key={idx} onClick={(e) => changeColor(color)}>

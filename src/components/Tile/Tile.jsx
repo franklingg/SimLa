@@ -40,7 +40,7 @@ export default function Tile({ data, tileIndex, updateTile, selectedColor }) {
 
   return (
     <div className={styles.tile} ref={tileRef}>
-      <TileImg width="17rem" height="17rem" />
+      <TileImg width="16.5rem" height="16.5rem" />
     </div>
   );
 }

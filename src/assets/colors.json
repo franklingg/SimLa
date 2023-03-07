@@ -1,94 +1,94 @@
 [
     {
-        "name": "BRANCO C01",
+        "name": "BRANCO",
         "value": "#FFF"
     },
     {
-        "name": "AMARELO CLARO C02",
+        "name": "AMARELO CLARO",
         "value": "#F9EBAA"
     },
     {
-        "name": "AMARELO C03",
+        "name": "AMARELO",
         "value": "#F5C149"
     },
     {
-        "name": "OCRE C04",
+        "name": "OCRE",
         "value": "#C29542"
     },
     {
-        "name": "LARANJA C05",
+        "name": "LARANJA",
         "value": "#D78357"
     },
     {
-        "name": "VERMELHO C06",
+        "name": "VERMELHO",
         "value": "#CB4542"
     },
     {
-        "name": "VERMELHO TIJOLO C07",
+        "name": "VERMELHO TIJOLO",
         "value": "#863429"
     },
     {
-        "name": "BEGE C08",
+        "name": "BEGE",
         "value": "#F7E3CA"
     },
     {
-        "name": "MARROM C09",
+        "name": "MARROM",
         "value": "#795257"
     },
     {
-        "name": "ROSA C10",
+        "name": "ROSA",
         "value": "#F1B4B9"
     },
     {
-        "name": "RUBI C11",
+        "name": "RUBI",
         "value": "#6A2923"
     },
     {
-        "name": "AZUL CLARO C12",
+        "name": "AZUL CLARO",
         "value": "#B4D4EB"
     },
     {
-        "name": "AZUL C13",
+        "name": "AZUL",
         "value": "#599DCC"
     },
     {
-        "name": "AZUL ESCURO C14",
+        "name": "AZUL ESCURO",
         "value": "#2F5C73"
     },
     {
-        "name": "VERDE CLARO C15",
+        "name": "VERDE CLARO",
         "value": "#ACC99D"
     },
     {
-        "name": "VERDE NEON C16",
+        "name": "VERDE NEON",
         "value": "#AFA977"
     },
     {
-        "name": "VERDE ESCURO C17",
+        "name": "VERDE ESCURO",
         "value": "#426338"
     },
     {
-        "name": "CINZA CLARO C18",
+        "name": "CINZA CLARO",
         "value": "#CACFCB"
     },
     {
-        "name": "CINZA C19",
+        "name": "CINZA",
         "value": "#A7ABAE"
     },
     {
-        "name": "PRETO C20",
+        "name": "PRETO",
         "value": "#202020"
     },
     {
-        "name": "AZUL PETROLEO C21",
+        "name": "AZUL PETROLEO",
         "value": "#0D7B9E"
     },
     {
-        "name": "CINZA CHUMBO C22",
+        "name": "CINZA CHUMBO",
         "value": "#727375"
     },
     {
-        "name": "GOIABA C23",
+        "name": "GOIABA",
         "value": "#AB4B3F"
     }
 ]
