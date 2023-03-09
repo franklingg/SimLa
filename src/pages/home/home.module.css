@@ -51,6 +51,12 @@
     transform: scale(1.02);
 }
 
+.model__warning {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    max-width: 23vw;
+}
+
 .board{
     display: flex;
     flex-direction: column;

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 170 170">
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="Camada_1-2" data-name="Camada 1">
+      <g id="_1" data-name="1">
+        <path d="M132.16,170c.3-21.8,17.11-39.37,37.84-39.37V0H0V170Z" fill="#231f20"/>
+      </g>
+      <g id="_2" data-name="2">
+        <path d="M132.16,170H170V130.63C149.27,130.63,132.46,148.2,132.16,170Z" fill="#fff"/>
+        <ellipse cx="47.04" cy="43.49" rx="31.24" ry="32.14" fill="#fff"/>
+        <ellipse cx="124.94" cy="32.62" rx="18.61" ry="18.31" fill="#fff"/>
+        <ellipse cx="27.24" cy="136.27" rx="18.61" ry="18.31" fill="#fff"/>
+        <ellipse cx="66.25" cy="111.66" rx="10.5" ry="10.33" fill="#fff"/>
+        <ellipse cx="90.43" cy="151.07" rx="9.71" ry="9.55" fill="#fff"/>
+        <ellipse cx="153.27" cy="80.9" rx="10.8" ry="10.63" fill="#fff"/>
+        <ellipse cx="114.69" cy="109.35" rx="22.73" ry="22.36" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
