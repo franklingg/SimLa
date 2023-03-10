@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 170 170">
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="Camada_1-2" data-name="Camada 1">
+      <g id="_1" data-name="1">
+        <polygon points="170 170 0 170 0 82.28 0 40.48 0 0 41.51 0 170 0 170 170" fill="#231f20"/>
+      </g>
+      <g id="_2" data-name="2">
+        <g>
+          <path d="M170,47V0H127.07Z" fill="#fff"/>
+          <path d="M0,123v47H42.93Z" fill="#fff"/>
+          <path d="M41.51,0H0V47L42.93,0Z" fill="#fff"/>
+          <path d="M127.07,170H170V123Z" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

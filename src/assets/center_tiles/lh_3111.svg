@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 170 170">
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="Camada_1-2" data-name="Camada 1">
+      <g id="Camada_2-2" data-name="Camada 2">
+        <g id="Camada_1-2-2" data-name="Camada 1-2">
+          <g id="_1" data-name=" 1">
+            <polygon points="170 170 0 170 0 82.3 0 40.5 0 0 41.5 0 170 0 170 170" fill="#231f20"/>
+          </g>
+          <g id="_2" data-name=" 2">
+            <path d="M39.6,40,85,85H45.1L0,40.5H0Z" fill="#939598"/>
+            <path d="M130.4,40,85,85V46L130.8,0h0c.1,16.7-.6,23.4-.4,40Z" fill="#939598"/>
+            <path d="M39.6,130,85,85v39L39.2,170h0c-.1-16.7.6-23.4.4-40Z" fill="#939598"/>
+            <path d="M130.4,130,85,85h39.9L170,129.5h0Z" fill="#939598"/>
+          </g>
+          <g id="_3" data-name=" 3">
+            <polygon points="39.2 0 0 0 0 40.5 39.2 0" fill="#fff"/>
+            <polygon points="0 127 0 170 37 170 0 127" fill="#fff"/>
+            <polygon points="130.8 170 170 170 170 129.5 130.8 170" fill="#fff"/>
+            <polygon points="170 42.9 170 0 133 0 170 42.9" fill="#fff"/>
+            <path d="M39.6,40,85,85V46L39.2,0h0c-.1,16.7.6,23.4.4,40Z" fill="#fff"/>
+            <path d="M130.4,40,85,85h39.9L170,40.5h0Z" fill="#fff"/>
+            <path d="M39.6,130,85,85H45.1L0,129.5H0Z" fill="#fff"/>
+            <path d="M130.4,130,85,85v39l45.8,46h0c.1-16.7-.6-23.4-.4-40Z" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

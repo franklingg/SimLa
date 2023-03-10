@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 170 170">
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="Camada_1-2" data-name="Camada 1">
+      <g id="_1" data-name="1">
+        <polygon points="0 0 48.04 0 170 0 170 32.54 170 87.72 170 170 0 170 0 34.24 0 0" fill="#231f20"/>
+      </g>
+      <g id="_2" data-name="2">
+        <rect x="20.53" y="21.23" width="24.62" height="24.16" fill="#939598"/>
+        <rect x="133.95" y="100.38" width="21.1" height="54.13" fill="#939598"/>
+      </g>
+      <g id="_3" data-name="3">
+        <rect x="89.99" y="59.19" width="40.66" height="23.73" fill="#fff"/>
+        <rect x="133.95" y="24.25" width="14.95" height="16.17" fill="#fff"/>
+        <rect x="25.81" y="97.79" width="48.58" height="47.67" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

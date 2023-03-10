@@ -67,7 +67,7 @@ export default function Index() {
         />
         <button className={styles.model__export} onClick={(_)=>exportModel(boardRef, centerModel, sideModel)}>Exportar Modelo</button>
         <button className={styles.model__clean} onClick={cleanModels}>Limpar Áreas</button>
-        <span className={styles.model__warning}>*A imagem dos ladrilhos pode distorcer dependendo do computador/celular a exibir, o produto final não será exatamnte como mostrado na simulação</span>
+        <span className={styles.model__warning}>*A imagem dos ladrilhos pode distorcer dependendo do seu dispositivo, o produto final não será exatamnte como mostrado na simulação</span>
       </section>
       <section className={styles.board}>
         <h2>Modelo gerado*</h2>
