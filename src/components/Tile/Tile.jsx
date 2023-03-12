@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import styles from "./Tile.module.css";
 
-export default function Tile({ data, tileIndex, updateTile, selectedColor }) {
+export default function Tile({ data, vertical, tileIndex, updateTile, selectedColor }) {
   const TileImg = data.img;
   const tileRef = useRef();
 
@@ -37,6 +37,12 @@ export default function Tile({ data, tileIndex, updateTile, selectedColor }) {
       }
     }
   }, [tileIndex, data.type]);
+
+  useEffect(()=> {
+    if(tileRef.current && vertical){
+      tileRef.current.style.transform = `rotate(${data.asym ? 90 : 270}deg)`;
+    }
+  }, []);
 
   return (
     <div className={styles.tile} ref={tileRef}>

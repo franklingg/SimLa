@@ -67,7 +67,7 @@ export default function Index() {
         />
         <button className={styles.model__export} onClick={(_)=>exportModel(boardRef, centerModel, sideModel)}>Exportar Modelo</button>
         <button className={styles.model__clean} onClick={cleanModels}>Limpar Áreas</button>
-        <span className={styles.model__warning}>*A imagem dos ladrilhos pode distorcer dependendo do seu dispositivo, o produto final não será exatamnte como mostrado na simulação</span>
+        <span className={styles.model__warning}>*A imagem dos ladrilhos pode distorcer dependendo do seu dispositivo, o produto final não será exatamente como mostrado na simulação</span>
       </section>
       <section className={styles.board}>
         <h2>Modelo gerado*</h2>
@@ -75,7 +75,7 @@ export default function Index() {
         <div className={styles.board__area} ref={boardRef}>
           {sideModel
             ? <>
-                {Array.from(Array(4)).map((_, idx) => <Tile data={sideModel} key={idx} updateTile={updateTile(setSideModel)} selectedColor={selectedColor} />)}
+                {Array.from(Array(4)).map((_, idx) => <Tile vertical={idx >= 2} data={sideModel} key={idx} updateTile={updateTile(setSideModel)} selectedColor={selectedColor} />)}
                 <Tile data={{...sideModel.cornerModel, layoutChanges: {...sideModel.layoutChanges}}} updateTile={updateTile(setSideModel)} selectedColor={selectedColor} />
               </>
             : 

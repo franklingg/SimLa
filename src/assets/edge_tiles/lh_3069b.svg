@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="170" viewBox="0 0 170 170">
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="Camada_1-2" data-name="Camada 1">
+      <g id="Camada_2-2" data-name="Camada 2">
+        <g id="Camada_1-2-2" data-name="Camada 1-2">
+          <rect id="_1" data-name=" 1" x="0.01" y="32.18" width="137.82" height="137.82" fill="#231f20"/>
+          <g id="_2" data-name=" 2">
+            <rect y="149.9" width="20.1" height="20.1" fill="#939598"/>
+            <g>
+              <rect width="170" height="20.1" fill="#939598"/>
+              <rect x="149.91" y="20.1" width="20.09" height="149.9" fill="#939598"/>
+            </g>
+          </g>
+          <g id="_3" data-name=" 3">
+            <polygon points="85.61 43.96 42.4 83.94 86.56 128.75 128.81 84.49 85.61 43.96" fill="#fff"/>
+            <polygon points="45.89 170 62.55 170 67.72 170 71.92 170 75.22 170 78 170 79.93 170 86.77 170 86.77 170 86.91 170 94.42 170 95.31 170 96.65 170 103.61 170 105.25 170 107.77 170 115.59 170 117.26 170 120.95 170 123.29 170 86.37 130.34 45.89 170" fill="#fff"/>
+            <polygon points="0 48.16 0 50.37 0 53.84 0 55.25 0 62.8 0 62.9 0 66.53 0 71.25 0 73.38 0 73.95 0 81.46 0 83.27 0 87.7 0 90 0 96.08 0 96.5 0 103.08 0 103.89 0 110.08 0 123.4 42.4 83.64 0 48.16" fill="#fff"/>
+            <g>
+              <rect y="137.83" width="32.18" height="12.08" fill="#fff"/>
+              <rect x="20.1" y="149.9" width="12.08" height="20.1" fill="#fff"/>
+            </g>
+            <g>
+              <rect y="20.1" width="149.9" height="12.08" fill="#fff"/>
+              <rect x="137.83" y="32.18" width="12.08" height="137.82" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

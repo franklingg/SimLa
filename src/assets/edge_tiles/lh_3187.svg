@@ -1,19 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="170" height="170" viewBox="0 0 170 170">
+<svg xmlns="http://www.w3.org/2000/svg" width="170.01" height="170" viewBox="0 0 170.01 170">
   <g id="Camada_2" data-name="Camada 2">
     <g id="Camada_1-2" data-name="Camada 1">
-      <g id="_1" data-name="1">
-        <rect width="170" height="170" fill="#231f20"/>
-      </g>
-      <g id="_2" data-name="2">
-        <path d="M150.24,58.86A27.68,27.68,0,0,0,128,70a27.69,27.69,0,0,0-43.33-1.42A27.69,27.69,0,0,0,41.36,70,27.67,27.67,0,0,0,0,66.54V106.7a27.67,27.67,0,0,0,41.35-3.5,27.69,27.69,0,0,0,43.33,1.42A27.69,27.69,0,0,0,128,103.2a27.7,27.7,0,0,0,42,2.91v-39a27.67,27.67,0,0,0-19.76-8.27Z" fill="#939598"/>
-      </g>
-      <g id="_3" data-name="3">
-        <rect y="23.38" width="169.42" height="11.41" fill="#fff"/>
-        <rect y="135.2" width="169.42" height="11.41" fill="#fff"/>
-        <rect x="54.43" y="77.45" width="18.3" height="18.3" rx="1.67" transform="translate(-42.62 70.32) rotate(-45)" fill="#fff"/>
-        <rect x="9.98" y="77.46" width="18.3" height="18.3" rx="1.67" transform="translate(-55.64 38.89) rotate(-45)" fill="#fff"/>
-        <rect x="141.1" y="77.46" width="18.3" height="18.3" rx="1.67" transform="translate(-17.24 131.61) rotate(-45)" fill="#fff"/>
-        <rect x="96.64" y="77.46" width="18.3" height="18.3" rx="1.67" transform="translate(-30.26 100.18) rotate(-45)" fill="#fff"/>
+      <g id="Camada_2-2" data-name="Camada 2">
+        <g id="Camada_1-2-2" data-name="Camada 1-2">
+          <g id="_1" data-name=" 1">
+            <rect width="170" height="170" fill="#231f20"/>
+          </g>
+          <g id="_2" data-name=" 2">
+            <path d="M150.24,58.86A27.69,27.69,0,0,0,128,70a27.69,27.69,0,0,0-43.33-1.42A27.69,27.69,0,0,0,41.36,70,27.68,27.68,0,0,0,2.65,64.3,27,27,0,0,0,0,66.54V106.7a27.66,27.66,0,0,0,39.12-.86,26.82,26.82,0,0,0,2.23-2.64,27.69,27.69,0,0,0,43.33,1.42A27.69,27.69,0,0,0,128,103.2a27.7,27.7,0,0,0,38.75,5.74,27.35,27.35,0,0,0,3.25-2.83v-39a27.65,27.65,0,0,0-19.76-8.27Z" fill="#939598"/>
+          </g>
+          <g id="_3" data-name=" 3">
+            <rect y="23.38" width="170.01" height="11.41" fill="#fff"/>
+            <rect y="135.2" width="170.01" height="11.41" fill="#fff"/>
+            <rect x="54.42" y="77.45" width="18.3" height="18.3" rx="1.67" transform="translate(-42.61 70.32) rotate(-45)" fill="#fff"/>
+            <rect x="9.98" y="77.46" width="18.3" height="18.3" rx="1.67" transform="translate(-55.64 38.89) rotate(-45)" fill="#fff"/>
+            <rect x="141.1" y="77.46" width="18.3" height="18.3" rx="1.67" transform="translate(-17.24 131.61) rotate(-45)" fill="#fff"/>
+            <rect x="96.64" y="77.47" width="18.3" height="18.3" rx="1.67" transform="translate(-30.26 100.17) rotate(-45)" fill="#fff"/>
+          </g>
+        </g>
       </g>
     </g>
   </g>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170.9" height="170.11" viewBox="0 0 170.9 170.11">
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="Camada_1-2" data-name="Camada 1">
+      <g id="Camada_2-2" data-name="Camada 2">
+        <g id="Camada_1-2-2" data-name="Camada 1-2">
+          <g id="_1" data-name=" 1">
+            <rect x="0.9" y="32.18" width="137.82" height="137.82" fill="#231f20"/>
+          </g>
+          <g id="_2" data-name=" 2">
+            <rect width="170.9" height="20.1" fill="#939598"/>
+            <rect x="150.81" y="20.1" width="20.09" height="149.9" fill="#939598"/>
+            <rect x="0.02" y="149.9" width="20.98" height="20.1" fill="#939598"/>
+            <polygon points="66.58 51.49 106.8 51.49 115.32 60.59 115.32 103.59 83.28 137.83 34.54 85.73 66.58 51.49" fill="#939598"/>
+            <path d="M18.51,83.53.88,65.92v35.17L18.49,83.54h0Z" fill="#939598"/>
+            <path d="M84.71,151.78,66.78,170H102.6L84.72,151.78h0Z" fill="#939598"/>
+          </g>
+          <g id="_3" data-name=" 3">
+            <g>
+              <rect x="0.88" y="137.83" width="32.2" height="12.08" fill="#fff"/>
+              <rect x="21" y="149.91" width="12.08" height="20.09" fill="#fff"/>
+            </g>
+            <g>
+              <rect x="0.88" y="20.1" width="149.93" height="12.08" fill="#fff"/>
+              <rect x="138.73" y="32.18" width="12.08" height="137.82" fill="#fff"/>
+            </g>
+            <g>
+              <rect x="49.72" y="41.62" width="11.09" height="144.6" transform="translate(-63.78 70.8) rotate(-44.21)" fill="#fff"/>
+              <rect x="-6.83" y="70.22" width="82.74" height="12.23" transform="translate(-43.86 46.78) rotate(-45)" fill="#fff"/>
+              <rect x="50.16" y="129.76" width="83.84" height="12.54" transform="translate(-69.22 104.96) rotate(-45)" fill="#fff"/>
+              <rect x="114.2" y="59.51" width="11.3" height="50.65" fill="#fff"/>
+              <rect x="59.63" y="42.86" width="48.53" height="9.36" fill="#fff"/>
+              <rect x="108.48" y="43.07" width="10.29" height="23.72" transform="translate(-3.67 101.51) rotate(-47.46)" fill="#fff"/>
+              <polygon points="10.32 109.2 0.9 100.92 0.9 117.49 10.32 109.2" fill="#fff"/>
+              <polygon points="9.09 57.94 0.88 49.66 0.88 66.22 9.09 57.94" fill="#fff"/>
+              <polygon points="58.53 160.58 50.25 170 66.82 170 58.53 160.58" fill="#fff"/>
+              <polygon points="109.63 161.86 101.25 170 118.01 170 109.63 161.86" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

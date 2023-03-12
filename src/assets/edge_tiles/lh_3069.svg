@@ -1,21 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="170" height="170" viewBox="0 0 170 170">
   <g id="Camada_2" data-name="Camada 2">
     <g id="Camada_1-2" data-name="Camada 1">
-      <g id="_1" data-name="1">
-        <polygon points="170 170 0 170 0 82.27 0 40.48 0 0 41.51 0 170 0 170 170" fill="#231f20"/>
-      </g>
-      <g id="_2" data-name="2">
-        <rect width="170" height="20.1" fill="#939598"/>
-        <rect y="149.9" width="170" height="20.1" fill="#939598"/>
-      </g>
-      <g id="_3" data-name="3">
-        <polygon points="170 87.31 170 78.71 170 78.71 170 87.31 170 87.31" fill="#939598"/>
-        <rect x="170" y="58.09" height="6.47" fill="#fff"/>
-        <polygon points="128.16 86.7 170 37.8 170 130.34 128.16 86.7" fill="#fff"/>
-        <polygon points="82.78 130.34 128.16 86.7 81.77 37.8 37.41 86.1 82.78 130.34" fill="#fff"/>
-        <polygon points="0 130.34 37.41 86.1 0 37.8 0 130.34" fill="#fff"/>
-        <rect y="20.1" width="170" height="12.08" fill="#fff"/>
-        <rect y="137.83" width="170" height="12.08" fill="#fff"/>
+      <g id="Camada_2-2" data-name="Camada 2">
+        <g id="Camada_1-2-2" data-name="Camada 1-2">
+          <g id="Camada_2-2-2" data-name="Camada 2-2">
+            <g id="Camada_1-2-2-2" data-name="Camada 1-2-2">
+              <g id="_1" data-name=" 1">
+                <polygon points="0 0 170 0 170 87.73 170 129.52 170 170 128.49 170 0 170 0 0" fill="#231f20"/>
+              </g>
+              <g id="_2" data-name=" 2">
+                <rect y="149.9" width="170" height="20.1" fill="#939598"/>
+                <rect width="170" height="20.1" fill="#939598"/>
+              </g>
+              <g id="_3" data-name=" 3">
+                <rect y="137.82" width="170" height="12.08" fill="#fff"/>
+                <polygon points="127.04 84.98 170 126.02 170 43.94 127.04 84.98" fill="#fff"/>
+                <rect y="20.09" width="170" height="12.08" fill="#fff"/>
+                <rect x="55.95" y="55.34" width="58.1" height="58.1" transform="translate(-34.78 84.82) rotate(-45)" fill="#fff"/>
+                <polygon points="42.96 84.39 0 46.03 0 122.75 42.96 84.39" fill="#fff"/>
+              </g>
+            </g>
+          </g>
+        </g>
       </g>
     </g>
   </g>
