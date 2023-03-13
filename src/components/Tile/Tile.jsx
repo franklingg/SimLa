@@ -26,8 +26,6 @@ export default function Tile({ data, vertical, tileIndex, updateTile, selectedCo
 
   useEffect(()=>{
     if(tileRef.current && tileIndex != 0){
-      // if(data.type == 'PAIR'){
-      //   if(tileIndex % 2) tileRef.current.style.transform = 'rotate(90deg)'
       if(data.type == 'NORMAL'){
         tileRef.current.style.transform = '';
       } else if(data.type == 'REFLECTIVE'){
