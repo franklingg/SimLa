@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 170 170.29">
   <g id="Camada_2" data-name="Camada 2">
     <g id="Camada_1-2" data-name="Camada 1">
-      <g id="_1" data-name="1">
-        <polygon points="0 170.29 0 0.29 87.72 0.29 129.52 0.29 170 0.29 170 41.8 170 170.29 0 170.29" fill="#231f20"/>
-        <polygon points="143.01 0.5 143.16 0.66 143.32 0.5 143.01 0.5" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+      <g id="_1" data-name="1" fill="#231f20">
+        <polygon points="0 170.29 0 0.29 87.72 0.29 129.52 0.29 170 0.29 170 41.8 170 170.29 0 170.29" />
+        <polygon points="143.01 0.5 143.16 0.66 143.32 0.5 143.01 0.5" stroke-miterlimit="10"/>
       </g>
       <g id="_2" data-name="2">
         <polygon points="33.26 170.29 0 135.92 0 170.29 33.26 170.29" fill="#939598"/>
