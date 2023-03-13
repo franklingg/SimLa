@@ -40,7 +40,7 @@ export default function Tile({ data, vertical, tileIndex, updateTile, selectedCo
     if(tileRef.current && vertical){
       tileRef.current.style.transform = `rotate(${data.asym ? 90 : 270}deg)`;
     }
-  }, []);
+  }, [data.asym, vertical]);
 
   return (
     <div className={styles.tile} ref={tileRef}>
