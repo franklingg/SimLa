@@ -19,7 +19,7 @@ export default function Tile({ data, vertical, tileIndex, updateTile, selectedCo
       const clickables = [...tileRef.current.querySelectorAll('[data-name]')];
       Object.keys(data.layoutChanges).forEach(key => {
       const elementToFill = clickables.find(el => el.getAttribute('data-name') == key );
-        elementToFill.style.fill = data.layoutChanges[key]
+      elementToFill.style.fill = data.layoutChanges[key];
       });
     }
   }, [data.layoutChanges]);
