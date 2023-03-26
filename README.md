@@ -1,4 +1,4 @@
 ### SimLa
 
 Acesse o simulador:
-[https://simulador-metro.vercel.app/home]()
+[https://www.simulador-metro.vercel.app/home]()
